@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root[theme="light"] {
+  --foreground-rgb: 0, 0, 0;
+  --theme: #fff;
+}
+
+:root[theme="dark"] {
+  --foreground-rgb: #fff;
+  --theme: #000;
+}
+
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--theme);
+}
